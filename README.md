@@ -1,7 +1,7 @@
 # Morgans_ASM_Disco_Bootloader
 Just a fun bootsector to learn some X86 ASM.
 
-I was reading a book about computer history and it inspired me to work with a computer a very low level.  Modern computing environments are abstracted far, far away from machine code.  I decided to write something fun with X86 assembler.  The end result of that was....  Morgan's Disco Bootsector!
+Modern computing environments are abstracted far, far away from machine code & as a result many techs don't understand how computers work.  I decided to write something fun with X86 assembler to learn more about them.  The end result of that was....  Morgan's Disco Bootsector!
 
 This is a bootable program on any IBM compatible PC that does the following:
 - Sets the display to VGA graphics mode (320x200x256)
@@ -15,10 +15,10 @@ https://youtu.be/kVPWyRFjVck
 This was a great learning exercise.  Here are some of the things I learned about over the course of the exercise:
 
 - PC bootloaders & the magic bytes at 510-512.
-- 16-bit 'Read-mode' X86 segmented memory model.
+- 16-bit 'Real-mode' X86 segmented memory model.
 - int 10h BIOS interrupts to set screen modes (e.g. character & graphics modes) & writing to the video buffer at 0x0a0000.
 - Configuring your PC's programmable timers (PIT) for timing in your application as well as for the PC speaker.
-- Random number generation (linear congruential PRNG)
+- Random number generation (linear congruential PRNG).
 - Debugging low level code in bochs.
 
 Install / testing:
